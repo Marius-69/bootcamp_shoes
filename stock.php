@@ -2,76 +2,58 @@
 
 class Stock
 {
-    public $libelle;
-    public $prix_achat;
-    public $prix_vente;
-    public $fournisseur;
-    public $nb_produit;
+    public $marque;
+    public $pointure;
+    public $prix;
+    public $etat;
 
-    public function __construct($libelle,$prix_achat,$prix_vente,$fournisseur,$nb_produit)
+    public function __construct($marque,$pointure,$prix,$etat)
     {
-        $this->libelle = $libelle;
-        $this->prix_achat = $prix_achat;
-        $this->prix_vente = $prix_vente;
-        $this->fournisseur = $fournisseur;
-        $this->nb_produit = $nb_produit;
+        $this->marque = $marque;
+        $this->pointure = $pointure;
+        $this->prix = $prix;
+        $this->etat = $etat;
     }
 
-    public function setLibelle(string $libelle): void
+    public function setMarque(string $marque): void
     {
-        $this->libelle = $libelle;
+        $this->marque = $marque;
     }
 
-    public function getLibelle(): string
+    public function getMarque(): string
     {
-        return $this->libelle;
+        return $this->marque;
     }
 
-    public function setPrix_achat(string $prix_achat): void
+    public function setPointure(string $pointure): void
     {
-        $this->prix_achat = $prix_achat;
+        $this->pointure = $pointure;
     }
 
-    public function getPrix_achat(): int
+    public function getPointure(): int
     {
-        return $this->prix_achat;
+        return $this->pointure;
     }
 
-    public function setPrix_vente(string $prix_vente): void
+    public function setPrix(string $prix): void
     {
-        $this->prix_vente = $prix_vente;
+        $this->prix = $prix;
     }
 
-    public function getPrix_vente(): int
+    public function getPrix(): int
     {
-        return $this->prix_vente;
+        return $this->prix;
     }
 
-    public function setFournisseur(string $fournisseur): void
+    public function setEtat(string $etat): void
     {
-        $this->fournisseur = $fournisseur;
+        $this->etat = $etat;
     }
 
-    public function getFournisseur(): string
+    public function getEtat(): string
     {
-        return $this->fournisseur;
+        return $this->etat;
     }
-
-    public function setNb_produit(string $nb_produit): void
-    {
-        $this->nb_produit = $nb_produit;
-    }
-
-    public function getNb_produit(): int
-    {
-        return $this->nb_produit;
-    }
-
-    public function total(): int
-    {
-        return $this->nb_produit = $this->nb_produit + 8;
-    }
-    
 }
 
 ?>
